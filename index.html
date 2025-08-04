@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Portfolio</title>
+  <title>Dhruva Patel - Portfolio</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -11,18 +11,30 @@
       color: #222;
     }
     .profile-header {
-      margin-bottom: 32px;
+      text-align: center;
+      margin-bottom: 40px;
     }
     .profile-header h1 {
       margin: 0;
-      font-size: 2.5em;
+      font-size: 3em;
     }
     .profile-header p {
       font-size: 1.2em;
       color: #555;
+      max-width: 600px;
+      margin: 20px auto 0;
     }
     .projects {
-      margin-top: 32px;
+      margin-top: 40px;
+    }
+    .projects h2 {
+      font-size: 2em;
+      margin-bottom: 12px;
+    }
+    .projects-intro {
+      font-size: 1em;
+      color: #444;
+      margin-bottom: 24px;
     }
     .project {
       background: #fff;
@@ -42,6 +54,9 @@
       border: 1px solid #ddd;
       border-radius: 6px;
     }
+    .project a img:hover {
+      opacity: 0.9;
+    }
     .project-links a {
       margin-right: 14px;
       text-decoration: none;
@@ -57,54 +72,60 @@
   <div class="profile-header">
     <h1>Dhruva Patel</h1>
     <p>Physics undergraduate at UBC Vancouver with a passion for experimental physics. 
-        I’m particularly interested in electronics, materials science, and data analysis, and enjoy applying my hands-on skills in the lab. 
-        When I'm not in the lab, I'll be reading, working out, crocheting, and exploring new hobbies.  
+      I’m particularly interested in electronics, materials science, and data analysis, and enjoy applying my hands-on skills in the lab. 
+      When I'm not in the lab, I'll be reading, working out, crocheting, and exploring new hobbies.  
+    </p>
   </div>
 
   <section class="projects">
-    <h2>Previous Projects</h2>
-    
+    <h2>Projects</h2>
+    <p class="projects-intro">
+      Here's a collection of my previous projects completed using Python and MATLAB that showcase my experience and skills. 
+      Please contact me for the full lab report if it’s not posted below, as some cannot be shared publicly.
+    </p>
+
     <div class="project">
       <h3 class="project-title">Cooling Mechanisms</h3>
-      <p>Modeled heat dissipation on metal rods with different finishes using Python, and analyzed cooling rates.</p>
+      <p>Modeled heat dissipation on metal rods with different finishes using Python, and analyzed cooling rates. My progress throughout the 
+        experiment is evident as I went back and debugged my code and worked through any issues I found.
+      </p>
       <div class="project-links">
         <a href="Cooling Mechanisms.pdf" target="_blank">PDF</a>
+        <a href="Cooling Mechanisms.pdf" target="_blank">
+          <img src="Cooling Mechanisms.png" alt="Cooling Mechanisms project thumbnail">
+        </a>
       </div>
-      <img src="Cooling Mechanisms.png" alt="Cooling Mechanisms project image">
     </div>
 
     <div class="project">
-      <h3 class="project-title"> Binding Energy Model and Half Life</h3>
+      <h3 class="project-title">Binding Energy Model and Half Life</h3>
       <p>Modeled the binding energy using the semi-empirical mass formula and estimated alpha decay half life using Python.</p>
       <div class="project-links">
-        <a href="Half Life.pdf" target="_blank">PDF</a>
-      </div>
-      <div class="project-links"></div>
-        <a href="Liquid Drop Model.pdf" target="_blank">PDF</a>
+        <a href="Half Life.pdf" target="_blank">Half Life PDF</a>
+        <a href="Liquid Drop Model.pdf" target="_blank">Liquid Drop Model PDF</a>
       </div>
     </div>
 
     <div class="project">
       <h3 class="project-title">Helium Neon Laser Cavity Dynamics</h3>
       <p>Studied the properties of a HeNe laser in a cavity through various experiments such as a knife edge scan 
-        where data was collected using MATLAB and visualized using Python. Please contact me if you are interested in seeing 
-        the full lab report!
+        where data was collected using MATLAB and visualized using Python. Please contact me for the full lab report as it cannot be shared
+        publicly.
       </p>
       <div class="project-links">
-        <a href="Knife Edge.pdf" target="_blank">PDF</a>
+        <a href="Knife Edge.pdf" target="_blank">Knife Edge PDF</a>
       </div>
     </div>
 
     <div class="project">
       <h3 class="project-title">Thermal Noise in Resistive Components</h3>
-      <p> Determined the thermal noise in resistive components through careful calibration of all electronic equipment and
-        presented results in a physical review style final paper.
+      <p>Determined the thermal noise in resistive components through careful calibration of all electronic equipment and
+        presented results in a physical review style final paper. 
       </p>
       <div class="project-links">
         <a href="Thermal Noise in Resistive Components.pdf" target="_blank">PDF</a>
       </div>
     </div>
-
   </section>
 </body>
 </html>
